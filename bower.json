@@ -1,0 +1,20 @@
+{
+  "name": "BloodBank",
+  "version": "0.0.1",
+  "authors": [
+    "Kiloreux <kiloreux@gmail.com>"
+  ],
+  "description": "This is the web app for the Algerian Blood Bank",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/assets/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "~0.97.0"
+  }
+}

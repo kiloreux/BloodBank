@@ -1,0 +1,18 @@
+development: &dev
+  adapter: postgresql
+  encoding: unicode
+  database: bb_development
+  pool: 20
+  username: root
+  password: root
+
+test: &test
+  <<: *dev
+  database: bb_test
+
+production:
+  <<: *dev
+  database: bb_production
+
+cucumber:
+  <<: *test
