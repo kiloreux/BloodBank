@@ -5,18 +5,20 @@
         <div class="input-field col s12 m6">
           <select>
             <option value="" disabled selected>اختر فصيلة الدم</option>
-            <option value="1">Option 1</option>
-            <option value="2">Option 2</option>
-            <option value="3">Option 3</option>
+            <option value="A+" >A+</option>
+            <option value="A-" >A-</option>
+            <option value="B+" >B+</option>
+            <option value="B-" >B-</option>
+            <option value="O+" >O+</option>
+            <option value="O-" >O-</option>
+            <option value="AB+" >AB+</option>
+            <option value="AB-" >AB-</option>
           </select>
           <label>فصيلة الدم</label>
         </div>
         <div class="input-field col s12 m6">
-          <select>
+          <select class="city">
             <option value="" disabled selected>اختر ولايتك</option>
-            <option value="1">Option 1</option>
-            <option value="2">Option 2</option>
-            <option value="3">Option 3</option>
           </select>
           <label>الولاية</label>
         </div>
@@ -29,41 +31,37 @@
   <div class="row">
     <div class="col s12 offset-m3 m6 z-depth-1-half" id="register-card">
       <div class="row">
-        <form class="col s12">
+        <%= form_for Donor.new ,:html => {:class =>"col s12"} ,:url => donors_path do |f| %>
           <div class="row">
             <div class="input-field col s12">
-              <input id="first_name" type="text" class="validate">
-              <label for="first_name">الاسم</label>
+              <%= f.text_field :name,:type=>"text",:class=>"validate" %>
+              <%= f.label :name,"الاسم" %>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12">
-              <input id="disabled" type="text" class="validate">
-              <label for="disabled">رقم الهاتف</label>
+              <%= f.text_field :phone_number,:type=>"text" ,:class=>"validate" %>
+              <%= f.label :phone_number , "رقم الهاتف" %>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12">
-              <select>
-                <option value="" disabled selected>اختر ولايتك</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-              </select>
+              <%= f.select(:city, City.all.collect {|city| [ city.name, city.id ] },{prompt: 'اختر ولايتك'}) %>
               <label>الولاية</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12">
-              <input id="email" type="email" class="validate">
-              <label for="email">البريد الالكتروني</label>
+              <%= f.text_field :email,:type=>"email",:class=>"validate" %>
+              <%= f.label :email,"البريد الالكتروني" %>
             </div>
           </div>
           <div class="row center-align">
             <button class="btn waves-effect waves-light" type="submit" name="action">تسجيل متبرع جديد</button>
           </div>
-        </form>
+        <% end %>
       </div>
     </div>
   </div>
 </div>
+<%= render 'layouts/footer'%>
