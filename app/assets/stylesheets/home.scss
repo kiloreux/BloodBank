@@ -41,3 +41,20 @@ input{
 .dropdown-content li{
   text-align: right;
 }
+
+
+.message{
+  color: white;
+  text-align: center;
+  padding: 1% 3% 1% 3% !important;
+  border-radius: 5px;
+  margin-bottom: 4%;
+}
+
+.success{
+  background-color:  #DCEDC8;
+}
+
+.error{
+  background-color: #f8656a;
+}
