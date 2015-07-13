@@ -19,6 +19,9 @@ class DonorsController < ApplicationController
 
 
   def index
+    if params[:don_city] && params[:don_blood]
+
+    end
     donor_city=params[:don_city]
     donor_blood=params[:don_blood]
     @donors=Donor.search(donor_blood,donor_city)
