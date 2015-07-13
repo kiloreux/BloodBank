@@ -18,6 +18,12 @@ class DonorsController < ApplicationController
   end
 
 
+  def index
+    donor_city=params[:don_city]
+    donor_blood=params[:don_blood]
+    @donors=Donor.search(donor_blood,donor_city)
+  end
+
 
   private
 
