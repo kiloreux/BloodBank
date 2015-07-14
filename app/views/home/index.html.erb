@@ -16,11 +16,11 @@
     <div class="col s12 m6 offset-m3 z-depth-2" id="search-card">
       <div class="row valign center-align">
         <div class="input-field col s12 m6">
-          <%= select_tag(:don_blood, options_for_select([["A+","A+"],["A-","A-"],["B+","B+"],["B-","B-"],["O+","O+"],["O-","O-"],["AB+","AB+"],["AB-","AB-"]]),{prompt: 'فصيلة الدم'}) %>
+          <%= select_tag(:don_blood, options_for_select([["A+","A+"],["A-","A-"],["B+","B+"],["B-","B-"],["O+","O+"],["O-","O-"],["AB+","AB+"],["AB-","AB-"]]),{prompt: 'فصيلة الدم',required: true}) %>
           <label>فصيلة الدم</label>
         </div>
         <div class="input-field col s12 m6">
-          <%= select_tag(:don_city,options_for_select( City.all.collect {|city| [ city.name, city.id ] }),{prompt: 'اختر ولايتك'}) %>
+          <%= select_tag(:don_city,options_for_select( City.all.collect {|city| [ city.name, city.id ] }),{prompt: 'اختر ولايتك',required: true}) %>
           <label>الولاية</label>
         </div>
         <div class="row">
