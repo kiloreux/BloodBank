@@ -4,6 +4,10 @@ AlgerianBloodBank
 [code-climate]: https://codeclimate.com/github/Kiloreux/BloodBank
 [application-pivotal]: https://www.pivotaltracker.com/n/projects/1383854
 
+[![Build Status](https://travis-ci.org/Kiloreux/BloodBank.svg)](https://travis-ci.org/Kiloreux/BloodBank)
+[![Coverage Status](https://coveralls.io/repos/Kiloreux/BloodBank/badge.svg?branch=master&service=github)](https://coveralls.io/github/Kiloreux/BloodBank?branch=master)
+[![Code Climate](https://codeclimate.com/github/Kiloreux/BloodBank/badges/gpa.svg)](https://codeclimate.com/github/Kiloreux/BloodBank)
+[![Build Status](https://travis-ci.org/Kiloreux/BloodBank.svg)](https://travis-ci.org/Kiloreux/BloodBank)
 #### A website for collection of people who want to donate blood on need
 
 In Algeria my home country , blood donations are often done by indviduals because often hospitals don't have enough 
