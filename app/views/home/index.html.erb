@@ -2,11 +2,13 @@
   <div class="row">
 
     <% flash.each do |name, msg| %>
-        <div class="col s12 offset-m3 m6 z-depth-2 message <%=name %>">
+        <div class="col s12 m12 l8 offset-l2 z-depth-2 message <%=name %>">
           <%= content_tag :div, msg%>
           <% if @donor.errors.any? %>
-              <% @donor.errors.full_messages.each do |message| %>
-                  <div><%= message%></div>
+              <% @donor.errors.messages.values.each do |message| %>
+                  <%message.each do  |m| %>
+                    <div><%= m.to_sentence() %>-</div>
+                  <% end %>
               <% end %>
           <% end %>
         </div>

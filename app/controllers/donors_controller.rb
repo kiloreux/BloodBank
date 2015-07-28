@@ -12,7 +12,7 @@ class DonorsController < ApplicationController
       if @donor.errors
         session[:errors]=@donor.errors
       end
-      flash[:error] = "لقد حدث خطا ,الرجاء تصحيحه"
+      flash[:error] = ": لقد حدث خطا ,الرجاء تصحيحه"
       redirect_to root_path
     end
   end
