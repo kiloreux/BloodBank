@@ -1,26 +1,11 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/kiloreux/Desktop/Projects/BloodBank/spec/models/donor_spec.rb": [
+      "/home/kiloreux/Desktop/Projects/BloodBank/spec/controllers/home_controller_spec.rb": [
         1,
         null,
         1,
         1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
         1,
         1,
         null,
@@ -256,10 +241,10 @@
       "/home/kiloreux/Desktop/Projects/BloodBank/spec/factories/donors.rb": [
         1,
         1,
-        5,
-        6,
-        5,
-        5,
+        1,
+        1,
+        1,
+        1,
         1,
         null,
         null,
@@ -338,6 +323,24 @@
         1,
         null
       ],
+      "/home/kiloreux/Desktop/Projects/BloodBank/app/controllers/home_controller.rb": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/home/kiloreux/Desktop/Projects/BloodBank/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null
+      ],
       "/home/kiloreux/Desktop/Projects/BloodBank/app/models/donor.rb": [
         1,
         null,
@@ -354,6 +357,6 @@
         null
       ]
     },
-    "timestamp": 1438022253
+    "timestamp": 1438023882
   }
 }

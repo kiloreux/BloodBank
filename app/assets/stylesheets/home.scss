@@ -25,6 +25,9 @@ main {
 #register-card{
   margin-top: 10%;
 }
+
+// This is for editing the materialize to make it suit the arabic way of writing
+
 .input-field label{
   right: 0.75rem !important;
   left: auto;
@@ -42,6 +45,8 @@ input{
   text-align: right;
 }
 
+
+//Those are notification and messages styling
 
 .message{
   color: white;
