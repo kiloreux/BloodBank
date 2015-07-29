@@ -39,13 +39,15 @@
           <%= form_for Donor.new ,:html => {:class =>"col s12"} ,:url => donors_path do |f| %>
               <div class="row">
                 <div class="input-field col s12">
+                  <i class="material-icons prefix mdi-action-account-circle"></i>
                   <%= f.text_field :name,:type=>"text",:class=>"validate" %>
                   <%= f.label :name,"الاسم" %>
                 </div>
               </div>
               <div class="row">
                 <div class="input-field col s12">
-                  <%= f.text_field :phone_number,:type=>"number" ,:class=>"validate" %>
+                  <i class="material-icons prefix mdi-communication-phone"></i>
+                  <%= f.text_field :phone_number,:type=>"number" ,:class=>"numericOnly validate" %>
                   <%= f.label :phone_number , "رقم الهاتف" %>
                 </div>
               </div>
@@ -57,12 +59,14 @@
               </div>
               <div class="row">
                 <div class="input-field col s12">
+                  <i class="material-icons prefix action"></i>
                   <%= f.select(:blood_type, options_for_select([["A+","A+"],["A-","A-"],["B+","B+"],["B-","B-"],["O+","O+"],["O-","O-"],["AB+","AB+"],["AB-","AB-"]]),{prompt: 'فصيلة الدم'}) %>
                   <label>فصيلة الدم</label>
                 </div>
               </div>
               <div class="row">
                 <div class="input-field col s12">
+                  <i class="material-icons prefix mdi-communication-email"></i>
                   <%= f.text_field :email,:type=>"email",:class=>"validate" %>
                   <%= f.label :email,"البريد الالكتروني" %>
                 </div>

@@ -2,7 +2,7 @@
 
 body{
   font-family: 'Droid Arabic Kufi', sans-serif;
-  background-color: #00bcd6;
+  background-color: #ffffff;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -62,4 +62,11 @@ input{
 
 .error{
   background-color: #f8656a;
+}
+
+//This is to remove the spin from the phone number case
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
