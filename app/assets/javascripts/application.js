@@ -14,7 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require materialize/bin/materialize.js
-//= require google-analytics
 //= require_self
 
 
