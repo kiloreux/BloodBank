@@ -15,7 +15,7 @@ deploy:
   provider: heroku
   api_key:
     secure: kVCOhd6kq8gIkkNIhCYts+no2c0PmfXUE0Poh0AXDCRXTzJ/QjfmzXXTCPGSU+t5yZnuBlQHA7ov72Cb3ug68eLguGmEt1XuBJN3OAz2trJ8XAZGyyTQ7KRWKHmu6tuqYi1N8hLhPddjibOjRdG162Lbe5tPPSkVMU7ODj2wZBjHv55xmNLTckGs5SkSCgOP1fXim0g6v/jjiI4Ui7wTNvmh/kBJRQ+Ap3ToY6b3UuAF6LQwZWg+FLXER7VVShBtvblV8eJ0b+mS2xYfRaiwVZUajuK5n/c/1LWJr7nzKF4HttmijcQ/viDvV6j85Cyp1KA0FLR36zHK3WnN5S/GMNRW5Z5TSCrnrPF+bvhWrqRTo92tpxZ8tqarHZCdElUJ6HECrAA7xEAkpR20XausWFuiFc4SzFsjmk1LeDnCrXP9ss2yo6DCJsKqHUhX06/ITaTF15GyKJSCn/TqSSgPpmvYfDgnWeabAgwSIxR2Js8mtB+ii9xN35noojVj39ZNSwmgQkTl+INej7hYyOSUBdiSUycSTQKINch5DXXeV4xY4s9M85MyIfKIu2N384DqQYdzHOl+AKOJohKeI+/csG8VJ20LlMNWFI/esODuS0196wWEzKMsHSA0H+J/fpjC3xJYR3VhFtc57nOK1lutEnlOEiWtQPmVadO6JnxblbQ=
-  app: BloodBank
+  app: algerian-blood-bank
   on:
     repo: Kiloreux/BloodBank
 Kiloreux/BloodBank:
