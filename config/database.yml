@@ -3,8 +3,8 @@ development: &dev
   encoding: unicode
   database: bb_development
   pool: 20
-  username: root
-  password: root
+  username: kiloreux
+  password: kiloreux
 
 test: &test
   <<: *dev

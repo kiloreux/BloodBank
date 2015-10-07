@@ -1,6 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Donor, type: :model do
+
   it "has a valid factory" do
     expect(FactoryGirl.create(:donor)).to be_valid
   end
