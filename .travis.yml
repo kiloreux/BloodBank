@@ -11,3 +11,10 @@ before_script:
   - cp config/database.yml.travis config/database.yml
 addons:
   postgresql: '9.4'
+deploy:
+  provider: heroku
+  api_key: ENV["HEROKU_API_TOKEN"]
+  run:
+    - "rake db:migrate"
+    - restart
+    - "rake cleanup"
