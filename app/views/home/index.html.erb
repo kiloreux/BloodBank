@@ -78,5 +78,37 @@
         </div>
       </div>
     </div>
+    <div class="row">
+            <div class="col s12  m12 l8 offset-l2 z-depth-1-half " id="stats">
+              <table class="centered">
+                <thead>
+                <tr>
+                  <th data-field="A+">A+</th>
+                  <th data-field="A-">A-</th>
+                  <th data-field="B+">B+</th>
+                  <th data-field="B-">B-</th>
+                  <th data-field="O+">O+</th>
+                  <th data-field="O-">O-</th>
+                  <th data-field="AB+">AB+</th>
+                  <th data-field="AB-">AB-</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                  <td><%= @donors.where(:blood_type=>'A+').count %></td>
+                  <td><%= @donors.where(:blood_type=>'A-').count %></td>
+                  <td><%= @donors.where(:blood_type=>'B+').count %></td>
+                  <td><%= @donors.where(:blood_type=>'B-').count %></td>
+                  <td><%= @donors.where(:blood_type=>'O+').count %></td>
+                  <td><%= @donors.where(:blood_type=>'O-').count %></td>
+                  <td><%= @donors.where(:blood_type=>'AB+').count %></td>
+                  <td><%= @donors.where(:blood_type=>'AB-').count %></td>
+                </tr>
+                </tbody>
+              </table>
+
+            </div>
+    </div>
     </div>
 </div>

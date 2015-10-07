@@ -16,7 +16,7 @@ main {
   flex: 1 0 auto;
 }
 
-#register-card ,#search-card ,#results{
+#register-card ,#search-card ,#stats,#results{
   padding: 30px 30px 0 30px;
   border-radius: 6px;
   background-color: #eee;
@@ -26,6 +26,10 @@ main {
   margin-top: 10%;
 }
 
+#stats{
+  padding: 20px;
+  margin-top: 5%;
+}
 // This is for editing the materialize to make it suit the arabic way of writing
 
 .input-field label{
