@@ -2,7 +2,7 @@ AlgerianBloodBank
 ==========
 [oo-sw]: http://opensource.org/osd
 [code-climate]: https://codeclimate.com/github/Kiloreux/BloodBank
-[application-pivotal]: https://www.pivotaltracker.com/n/projects/1383854
+[application-pivotal]: https://www.pivotaltracker.com/projects/1927617
 
 [![Build Status](https://travis-ci.org/Kiloreux/BloodBank.svg)](https://travis-ci.org/Kiloreux/BloodBank)
 [![Coverage Status](https://coveralls.io/repos/Kiloreux/BloodBank/badge.svg?branch=master&service=github)](https://coveralls.io/github/Kiloreux/BloodBank?branch=master)
